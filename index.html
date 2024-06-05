@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Puntos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="background-animation">
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+    </div>
+    <div class="container">
+        <h1>Sistema de Puntos</h1>
+        <div id="authSection">
+            <form id="authForm">
+                <input type="password" id="password" placeholder="Introduce la contraseña" required>
+                <button type="submit" class="btn">Iniciar Sesión</button>
+            </form>
+            <button id="registerButton" class="btn">Registrarse</button>
+        </div>
+        <div id="registerSection" style="display: none;">
+            <form id="registerForm">
+                <input type="text" id="registerName" placeholder="Nombre" required>
+                <input type="email" id="registerEmail" placeholder="Correo electrónico" required>
+                <input type="file" id="registerMedia" accept="image/*,video/*" required>
+                <button type="submit" class="btn">Registrarse</button>
+                <button type="button" id="backToLoginButton" class="btn">Volver</button>
+            </form>
+        </div>
+        <div id="emailSection" style="display: none;">
+            <form id="emailForm">
+                <input type="email" id="email" placeholder="Introduce tu correo electrónico" required>
+                <button type="submit" class="btn">Ver Perfil</button>
+            </form>
+        </div>
+        <div id="mainSection" style="display: none;">
+            <div id="usersList" class="users-list">
+                <!-- Lista de usuarios se genera dinámicamente -->
+            </div>
+            <div id="changeMediaSection" style="display: none;">
+                <form id="changeMediaForm">
+                    <input type="file" id="changeMediaInput" accept="image/*,video/*" required>
+                    <button type="submit" class="btn">Cambiar Imagen/Video</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
